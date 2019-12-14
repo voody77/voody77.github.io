@@ -7,9 +7,16 @@
 // }
 
 
-$(document).ready(function(){
-    $(".button").click(function () {
-        $(".hide").slideToggle({duration: 300}).scrollTop();
-        $("html, body").animate({scrollTop: $(document).height()})
+// $(document).ready(function(){
+//     $(".button").click(function () {
+//         $(".hide").slideToggle({duration: 300}).scrollTop();
+//         $("html, body").animate({scrollTop: $(document).height()})
+//     });
+// });
+
+$(function(){
+    $('.button').click(function(){
+        $('.hide').slideToggle(300);
+        return false;
     });
 });
