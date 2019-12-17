@@ -7,16 +7,16 @@
 // }
 
 
-$(function(){
-    $(".button").click(function () {
-        $(".hide").slideToggle({duration: 300}).scrollTop('#job');
-        $("html, body").animate({scrollTop: $(document).height('#job')})
-    });
-});
-
 // $(function(){
-//     $('.button').click(function(){
-//         $('.hide').slideToggle(300);
-//         return false;
+//     $(".button").click(function () {
+//         $(".hide").slideToggle({duration: 300}).scrollTop();
+//         $("html, body").animate({scrollTop: $(document).height('#job')})
 //     });
 // });
+
+$(function(){
+    $('.button').click(function(){
+        $('.hide').slideToggle(300);
+        return false;
+    });
+});
